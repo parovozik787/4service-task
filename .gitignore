@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+/dist
+/build
+/.idea
+/.cache
+/node_modules
+yarn-error.log
+/.DS_Store
+
