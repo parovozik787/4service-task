@@ -1,25 +1,25 @@
-.page
-  - let testVariables = 'page__sidebar';
+.analytic
+  - let testVariables = 'analytic__sidebar';
     include ./../../components/Sidebar/Sidebar
-  .page__content
+  .analytic__content
     .container
-      .page__title
+      .analytic__title
         p
           span Hi Filip,
         p Checkout your latest projects and their progress
-      .page__line
-      .page__inner
-        .page__innerTitleBox
-          .page__chartTitle
+      .analytic__line
+      .analytic__inner
+        .analytic__innerTitleBox
+          .analytic__chartTitle
             span Wavy Lines
             | Working Hours
           include ./../../components/Select/Select
-        .page__chart-box
+        .analytic__chart-box
           include ./../../components/Charts/Chart-line/Chart-line
-      .page__row-box
-        .page__inner
-          .page__chart-box
+      .analytic__row-box
+        .analytic__inner
+          .analytic__chart-box
             include ./../../components/Charts/Chart-doughnut/Chart-doughnut
-        .page__inner
-          .page__chart-box
+        .analytic__inner
+          .analytic__chart-box
             include ./../../components/Charts/Chart-horizontal/Chart-horizontal
