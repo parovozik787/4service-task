@@ -1,7 +1,11 @@
-img {
-	width: 200px;
-	height: 300px;
-	}
-
-
-@import "./../../components/Header/Header";
+@import "../../assets/styles/Reset";
+@import "../../assets/styles/Variables";
+@import "../../assets/styles/Common";
+@import "./../../components/Logotype/Logotype";
+@import "./../../components/Sidebar/Sidebar";
+@import "./../../components/Toolbar/Toolbar";
+@import "./../../components/Burger/Burger";
+@import "./../../components/Select/Select";
+@import "../../assets/styles/Charts-default";
+@import "./../../components/Charts/Charts";
+@import "./../../pages/Analytic/Analytic";

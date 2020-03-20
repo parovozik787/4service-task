@@ -1,0 +1,29 @@
+
+#chartjs-tooltip {
+	position: absolute;
+
+	-webkit-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+	-webkit-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+	text-align: center;
+	pointer-events: none;
+
+	opacity: 1;
+	color: #fff;
+	border-radius: 3px;
+	background-color:  rgb(79, 95, 111);
+
+	font-size: 12px;
+	font-weight: 700;
+	&:before{
+		position: absolute;
+		bottom: -12px;
+
+		content: "";
+		transform: translate(-50%, 0);
+
+		border: 6px solid transparent;
+		border-top: 6px solid rgb(79, 95, 111) !important;
+		}
+	}

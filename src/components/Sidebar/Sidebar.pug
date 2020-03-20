@@ -1,0 +1,28 @@
+include ./icons/Sidebar-icons
+.sidebar(class=testVariables)
+  ul.sidebar__inner
+    li
+      a.sidebar__link.sidebar__link--active(href="#0")
+        +icon-1
+        | Home
+    li
+      a.sidebar__link(href="#0")
+        +icon-2
+        | Time Management
+    li
+      a.sidebar__link(href="#0")
+        +icon-3
+        | Inbox
+    li
+      a.sidebar__link(href="#0")
+        +icon-4
+        | Calendar
+    li
+      a.sidebar__link(href="#0")
+        +icon-5
+        | Analytics
+    li
+      a.sidebar__link(href="#0")
+        +icon-6
+        | Settings
+  include ./../../components/Burger/Burger

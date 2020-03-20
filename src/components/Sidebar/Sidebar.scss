@@ -1,0 +1,39 @@
+.sidebar{
+	width: 100%;
+	max-width: 230px;
+
+	background-color: #37474f;
+	&__link{
+		display: flex;
+		align-items: center;
+
+		padding: 22px 20px;
+
+		cursor: pointer;
+
+		color: rgba(255, 255, 255, 0.5);
+
+		line-height: 1.2;
+		& svg{
+			margin-right: 20px;
+			}
+		&:hover{
+			color: rgba(255, 255, 255, 1);
+			background-color: #455a64;
+			& path{
+				opacity: 1;
+				}
+			}
+		&--active{
+			color: rgba(255, 255, 255, 1);
+			background-color: #df468e;
+			& path{
+				opacity: 1;
+				}
+			&:hover{
+				color: #fff;
+				background-color: #df398a;
+				}
+			}
+		}
+	}

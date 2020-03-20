@@ -2,7 +2,11 @@ doctype html
 html(lang="en")
   head
     script(src="./Home.js")
+    meta(
+      name="viewport",
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+    )
+    title 4service
   body
-    include ./../../components/Header/Header
-    div hello
-    img(src="./../../assets/images/test-image-travol.jpg")
+    include ./../../components/Toolbar/Toolbar
+    include ./../../pages/Analytic/Analytic

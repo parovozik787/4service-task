@@ -1,0 +1,105 @@
+.page{
+	display: flex;
+	&__content{
+		width: 100%;
+		padding: 60px 0;
+		@media screen and (min-width: 1150px) {
+			width: calc(100% - 230px);
+			}
+		}
+	&__sidebar{
+		position: absolute;
+		left: -230px;
+
+		transition: 0.2s linear;
+		@media screen and (min-width: 1150px){
+			position: relative;
+			left: 0;
+			}
+		&--open{
+			left: 0;
+			}
+		}
+	&__inner{
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 10px 15px;
+
+		background-color: #fff;
+		box-shadow: 1px 1.7px 6px 0 rgba(139, 157, 175, 0.1);
+		@media screen and (min-width: 500px){
+			padding: 20px 30px;
+			}
+		}
+	&__innerTitleBox{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-between;
+
+		margin-bottom: 35px;
+		@media screen and (min-width: 500px) {
+			flex-direction: row;
+			}
+		}
+	&__row-box{
+		display: flex;
+		flex-direction: column;
+		& > div{
+			width: 100% ;
+			max-width: 100% ;
+			@media screen and (min-width: 1150px) {
+
+				&:nth-child(1){
+					max-width: calc(33% - 10px);
+					margin-right: 10px;
+					}
+				&:nth-child(2){
+					width: calc(100% - 33%);
+					}
+				}
+			}
+		@media screen and (min-width: 1150px) {
+			flex-direction: row;
+			}
+		}
+	&__title{
+		margin-bottom: 24px;
+		& span{
+			letter-spacing: 0.27px;
+
+			color: rgb(55, 71, 79);
+
+			font-size: 18px;
+			}
+		}
+	&__chartTitle{
+		display: inline-block;
+
+		letter-spacing: 0.13px;
+
+		color: rgb(120, 144, 156);
+
+		font-size: 12.5px;
+		line-height: 1.52;
+		& span{
+			display: block;
+
+			letter-spacing: normal;
+
+			color: rgb(55, 71, 79);
+
+			font-size: 21px;
+			}
+		@media screen and (max-width: 370px){
+			margin-bottom: 20px;
+			}
+		}
+	&__line{
+		width: 100%;
+		height: 2px;
+		margin-bottom: 40px;
+
+		background-color: rgba(188, 199, 211, 0.4);;
+		}
+	}

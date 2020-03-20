@@ -1,0 +1,14 @@
+body{
+	color: $color-main;
+	background-color: #f5f5f5;
+
+	font-family: $font-main;
+	font-size: $font-size;
+	line-height: $line-height;
+	}
+.container{
+	width: 100%;
+	max-width: 1090px;
+	margin: 0 auto;
+	padding: 0 20px;
+	}
