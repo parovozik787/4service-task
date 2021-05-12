@@ -32,7 +32,7 @@
   "dependencies": {
     "@babel/preset-react": "^7.7.4",
     "autoprefixer": "^9.7.3",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "parsel": "^0.3.0",
     "postcss-modules": "^1.4.1"
   },
